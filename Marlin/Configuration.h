@@ -780,10 +780,11 @@
  *      |           |
  *      O-- FRONT --+
  *    (0,0)
+ *    If i want to lower the bed, increase the Z minus . (from -3.3 to -3.8 )
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER 4  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER 44  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.4   // Z offset: -below +above  [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER 2  // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -30  // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -3.4   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -885,7 +886,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 208
-#define Y_BED_SIZE 240
+#define Y_BED_SIZE 250
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
